@@ -1,11 +1,22 @@
-<div>
-  Name :
-  <input [(ngModel)] ="user.username" placeholder="Name">
-</div>
-<div>
- Password:
-  <input [(ngModel)] ="user.password" placeholder="Password" type="password">
-</div>
-<button (click)="register(user)">Register</button>
-<button (click)="login(user)">Login</button>
-<button (click)="getme()">Get Me</button>
+<mat-toolbar class="t1">
+  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+ <h1 class="h1">LOGO</h1>
+</mat-toolbar>
+
+<mat-card class="c1">
+  <mat-card-content >
+      Name :
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <input [(ngModel)] ="user.username" placeholder="Name" >
+        <br><br>
+       Password :
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input [(ngModel)] ="user.password" placeholder="Password" type="password">
+      <br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button (click)="register(user)">Register</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button (click)="login(user)">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button (click)="getme()">Get Me</button>
+    <br>
+   </mat-card-content>
+</mat-card>
